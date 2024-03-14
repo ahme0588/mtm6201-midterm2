@@ -1,0 +1,915 @@
+html {
+
+    font-family: "montserrat", sans-serif;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-nav {
+    text-align: center;
+    padding-bottom: 5px;
+
+}
+
+header {
+    background-color: #F2D2BD;
+}
+
+
+.skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+.skip-links a {
+    position: absolute;
+    top: -3em;
+    left: 20em;
+    background-color: white;
+    color: black;
+    padding: .5em 1em;
+    font-weight: bold;
+}
+
+.skip-links a:focus {
+    top: 0;
+}
+
+nav ul a {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #192628;
+}
+
+nav ul li {
+    padding: 10px;
+
+}
+
+nav ul a:active {
+    color: #FA4A0c;
+}
+
+nav ul a:hover {
+    color: #FA4A0c;
+}
+
+nav ul a:current {
+    color: #FA4A0c;
+}
+
+.welcome-header,
+.about-header,
+.contact-header {
+    text-align: center;
+    background-color: #fafafa;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0, .51, .35, 1);
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translate(0px, 100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+
+.welcome-food {
+    color: #737373;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #252b42;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.welcome-paragraph {
+    color: #737373;
+    font-size: 1.7em;
+    font-weight: 300;
+    padding: 30px 30px 60px 30px;
+    line-height: 40px;
+}
+
+.welcome-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-btn1 {
+    font-weight: 550;
+    text-decoration: none;
+    background-color: #FA4A0c;
+    color: white;
+    font-size: 1.4em;
+    border-radius: 20px;
+    border: 2px solid #FA4A0c;
+    padding: 10px 40px 10px 40px;
+}
+
+.header-btn2 {
+    font-weight: 550;
+    text-decoration: none;
+    background-color: #fafafa;
+    color: #FA4A0c;
+    font-size: 1.4em;
+    border-radius: 20px;
+    border: 2px solid #FA4A0c;
+    padding: 10px 36px 10px 36px;
+}
+
+.btn1-space {
+    padding-bottom: 50px;
+}
+
+.header-btn1:hover {
+    color: #FA4A0c;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.header-btn1 {
+    transition: .5s;
+}
+
+.header-btn2:hover {
+    color: white;
+    background-color: #FA4A0c;
+    transition: 0.5s;
+}
+
+.header-btn2 {
+    transition: .5s;
+}
+
+.two-mobile {
+    margin-top: -100px;
+    margin-left: -100px;
+    margin-bottom: 0;
+    animation-name: mobile-bounce;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.46, .13, .62, .9);
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes mobile-bounce {
+    0% {
+        transform: translate(0px, 20px);
+    }
+
+    50% {
+        transform: translate(0px, 0px);
+
+    }
+
+    100% {
+        transform: translate(0px, 20px);
+
+    }
+}
+
+.how-app {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 50px 50px 50px;
+    color: #FA4A0c;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 20px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #192628;
+}
+
+.section-one p,
+.section-two p,
+.section-three p {
+    font-size: 1.5em;
+    color: #737373;
+    line-height: 30px;
+    margin: 30px;
+}
+
+.section-one-image,
+.section-two-image,
+.section-three-image {
+    position: relative;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+
+hr {
+    margin: 50px 0 50px 0;
+}
+
+.bottom-banner,
+.download-p2 {
+    display: none;
+}
+
+.downloading-section {
+    background-color: #252b42;
+}
+
+.downloading-section h3 {
+    color: #fafafa;
+    font-size: 2.5em;
+    font-weight: 500;
+    padding: 60px 10px 0 10px;
+    line-height: 60px;
+}
+
+.downloading-section p {
+    color: #bdbdbd;
+    margin: 0 40px 40px 40px;
+    line-height: 40px;
+}
+
+.footer-logo {
+    display: none;
+}
+
+.download-button a {
+    list-style: none;
+}
+
+.playstore-btn {
+    font-weight: 550;
+    text-decoration: none;
+    background-color: #FA4A0c;
+    color: white;
+    font-size: 1.4em;
+    border-radius: 7px;
+    border: 2px solid #FA4A0c;
+    padding: 10px 40px 10px 40px;
+
+}
+
+.appstore-btn {
+    font-weight: 550;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    border-radius: 7px;
+    border: 2px solid white;
+    padding: 10px 36px 10px 36px;
+}
+
+.download-button {
+    padding-bottom: 100px;
+}
+
+.appstore-btn:hover {
+    color: #FA4A0c;
+    border-color: #FA4A0c;
+    transition: 0.5s;
+}
+
+.appstore-btn {
+    transition: .5s;
+}
+
+
+.playstore-btn:hover {
+    color: #FA4A0c;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.playstore-btn {
+    transition: .5s;
+}
+
+
+.social-icons a {
+    padding: 15px;
+}
+
+.site-footer {
+    margin: 60px;
+}
+
+.copyright {
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+.page-h2,
+.about-set-h2 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.about-set-h2 {
+    padding-bottom: 20px;
+}
+
+.about-intro,
+.our-story,
+.about-join {
+    background-color: #252b42;
+}
+
+.intro-grid p,
+.about-join p,
+.contact-info p {
+    color: #fafafa;
+    font-size: 1.1em;
+    padding: 0 15px 35px 15px;
+    line-height: 25px;
+    margin: 15px 15px 40px 15px;
+}
+
+.intro-grid h3 {
+    padding-top: 30px;
+}
+
+.intro-grid {
+    padding: 20px;
+}
+
+.delivery-img {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FA4A0c;
+}
+
+.card {
+    border-radius: 12px;
+    margin: 20px;
+    background-color: seashell;
+    border: 1px solid slategray;
+
+}
+
+.cards h3 {
+    color: #252b42;
+    font-weight: 600;
+    font-size: 1.4em;
+    padding-top: 35px;
+}
+
+.cards p {
+    font-size: 1.1em;
+    line-height: 25px;
+    padding: 0 20px 40px 20px;
+}
+
+.join-us {
+    padding-top: 30px
+}
+
+.about-join {
+    padding-bottom: 50px;
+}
+
+.contact-info {
+    background-color: #252b42;
+    padding: 30px 0 20px 0;
+    margin: 20px;
+}
+
+.contact-p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.social-link {
+    background-color: #252b42;
+    color: white;
+    font-size: 1.2em;
+    padding: 30px 20px 40px 20px;
+    margin: 20px;
+}
+
+.social-link p {
+    padding-bottom: 25px;
+    font-size: .9em;
+    line-height: 25px;
+}
+
+.social-link ul li a {
+    color: #FA4A0c;
+}
+
+.social-link ul {
+    text-align: left;
+}
+
+.social-link ul li {
+    padding: 10px;
+}
+
+.contact {
+    font-size: 3em;
+}
+
+#fullname,
+#youremail,
+#message {
+    width: 100%;
+    margin: .5em 0em .5em 0;
+    font-size: 1.2em;
+}
+
+#message {
+    height: 6em;
+}
+
+
+.min-margin,
+.location {
+    margin: 1em 0em .5em 0em;
+}
+
+.contact-us {
+    text-align: left;
+    background-color: seashell;
+    border-radius: 10px;
+    padding: 0 20px 20px 20px;
+    margin: 20px;
+}
+
+.contact-btn {
+    margin: 20px;
+}
+
+.contact-btn a {
+    text-align: left;
+}
+
+.location-map {
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.back-to-top {
+    font-size: .6em;
+    color: #FA4A0c;
+}
+
+
+nav ul li:current {
+    color: #FA4A0c;
+
+}
+
+.intro-grid,
+.page-h2, .contact-social{
+    opacity: 0;
+    animation-name: intro-grid;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0, .51, .35, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes intro-grid {
+    0% {
+        transform: translate(100px, 0px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.card1 {
+    opacity: 0;
+    animation-name: card1;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0, .51, .35, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes card1 {
+    0% {
+        transform: translate(100px, 0px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.card2 {
+    opacity: 0;
+    animation-name: card2;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0, .51, .35, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 2.2s;
+}
+
+@keyframes card2 {
+    0% {
+        transform: translate(100px, 0px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.card3 {
+    opacity: 0;
+    animation-name: card3;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0, .51, .35, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 2.4s;
+}
+
+@keyframes card3 {
+    0% {
+        transform: translate(100px, 0px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.card4 {
+    opacity: 0;
+    animation-name: card4;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0, .51, .35, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 2.6s;
+}
+
+@keyframes card4 {
+    0% {
+        transform: translate(100px, 0px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+/* ***********************************************
+****************Desktop Styles***********************
+************************************************** */
+
+@media screen and (min-width:760px) {
+    html {
+        font-size: 1.2em;
+    }
+
+    header {
+        background-color: white;
+
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 100px;
+        padding-top: 10px;
+
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    nav ul li {
+        padding-left: 100px;
+        font: 1em;
+    }
+
+    nav ul li a {
+        font-size: .8em;
+    }
+
+    .welcome-header {
+        background-image: url(../images/Rectangle48.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 3em;
+        color: white;
+        margin: 10px 230px 0 230px;
+        line-height: 75px;
+
+    }
+
+    .welcome-food {
+        font-size: 1.3em;
+        font-weight: 550;
+        color: white;
+
+    }
+
+    .welcome-paragraph {
+        color: white;
+    }
+
+    .header-btn2 {
+        color: white;
+        border-color: white;
+        background-color: transparent;
+    }
+
+    .welcome-btns {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .btn1-space {
+        margin-bottom: -50px;
+        margin-right: 10px;
+    }
+
+    .btn2-space {
+        margin-left: 10px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    hr {
+        color: #737373;
+        height: 2px;
+        opacity: 10%;
+    }
+
+    .section-one,
+    .section-two,
+    .section-three {
+        display: flex;
+        align-items: center;
+    }
+
+    .section-one h3,
+    .section-two h3,
+    .section-three h3 {
+        font-size: 1em;
+        text-align: left;
+        margin-bottom: 20px;
+
+    }
+
+    .section-one h2,
+    .section-two h2,
+    .section-three h2 {
+        font-size: 1.7em;
+        text-align: left;
+        line-height: 50px;
+        margin: 0 60px 0 50px;
+    }
+
+    .section-one p,
+    .section-two p,
+    .section-three p {
+        font-size: 1.1em;
+        text-align: left;
+        margin: 30px 200px 0 50px;
+    }
+
+    .section-one-image,
+    .section-three-image {
+        order: -1;
+    }
+
+    .download-p2 {
+        display: block;
+        color: white;
+    }
+
+    .download-p1 {
+        display: none;
+    }
+
+    .download-app h3 {
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .download-app p {
+        color: white;
+    }
+
+    .downloading-section {
+        background-image: url(../images/Rectangle47.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .download-button a {
+        margin: 10px;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+
+    .about-background {
+        background-image: url(../images/about-us-banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 200px;
+    }
+
+    .about-intro,
+    .our-story {
+        text-align: left;
+        border-radius: 10px;
+    }
+
+    .about-intro p,
+    .our-story p {
+        font-size: .8em;
+    }
+
+    .cards p {
+        align-items: baseline;
+        font-size: .8em;
+        text-align: left;
+        padding: 0 20px 20px 20px;
+        margin: 0;
+    }
+
+    .cards h3 {
+        font-size: 1em;
+        text-align: left;
+        padding: 20px 0 0 0;
+        margin: 10px 20px 20px 20px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, auto);
+        margin: 0;
+    }
+
+    .cards {
+        padding-bottom: 30px;
+    }
+
+    .about-join {
+        padding: 50px 200px 50px 200px;
+    }
+
+
+    .intro-grid {
+        display: grid;
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "one one one one three three"
+            "two two two two three three";
+        gap: 20px;
+
+    }
+
+    .about-intro {
+        grid-area: one;
+    }
+
+    .our-story {
+        grid-area: two;
+    } 
+
+    .contact-background h1,
+    .about-background h1 {
+        text-align: center;
+        margin: auto;
+    }
+
+     .delivery-img {
+        grid-area: three;
+        margin-top: 0;
+        padding: 20px;
+        padding-bottom: 65px;
+        height: 86%;
+        border-radius: 10px;
+    } 
+
+    .contact-background {
+        position: relative;
+        background-image: url(../images/contact-us-banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 200px;
+    }
+
+
+    .contact-info p,
+    .contact-email p,
+    .social-link p {
+        font-size: 1em;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .contact-social {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contact-info,
+    .social-link {
+        border-radius: 10px;
+    }
+
+    .contact {
+        font-size: 2.5em;
+        padding-top: 30px;
+    }
+
+    .send-us {
+        padding-bottom: 20px;
+    }
+
+    #fullname,
+    #youremail,
+    #message {
+        font-size: 1.2em;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .location-map {
+        padding: 30px 0 30px 0;
+    }
+
+    .location {
+        color: #192628;
+    }
+
+    .social-link h3 {
+        font-size: 1.2em;
+
+    }
+
+    .social-link p {
+        font-size: .8em;
+        line-height: 30px;
+    }
+
+}
